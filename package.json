@@ -1,7 +1,7 @@
 {
   "name": "hamburger",
   "version": "1.0.0",
-  "description": "",
+  "description": "- macOS 11.6 - node 14.17.6 - npm 6.14.15 - gulp 4.0.2 ## 説明 - Dart-Sassで記述 - gulpを使用   - コマンド     - 「npx gulp compile」でコンパイルします     - 「npx gulp watch」でコンパイル＋ファイル監視します   - プラグイン     - sass     - gulp-sass     - gulp-sass-glob-use-forward     - gulp-autoprefixer     - gulp-plumber",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
