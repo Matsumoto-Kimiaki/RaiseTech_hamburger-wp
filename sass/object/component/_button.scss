@@ -1,0 +1,8 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.c-button {
+    border-radius: 10px;
+    border: 1px solid $grey;
+    cursor: pointer;
+}

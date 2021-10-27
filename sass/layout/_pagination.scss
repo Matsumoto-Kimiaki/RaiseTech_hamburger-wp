@@ -1,0 +1,15 @@
+@use "../foundation/mixin" as *;
+@use "../foundation/variable" as *;
+
+.l-pagination {
+  margin-top: 60.4px;
+  margin-bottom: 31px;
+  @include mq(tab) {
+    margin-top: 105.5px;
+    margin-bottom: 30px;
+  }
+  @include mq(pc) {
+    margin-top: 150px;
+    margin-bottom: 64px;
+  }
+}

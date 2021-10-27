@@ -1,0 +1,25 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-footer {
+  background-image: url(images/footer_bg.png);
+  background-size: cover;
+  background-position: center center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  &__title {
+    h3 {
+      font-size: 1.25rem;
+      font-weight: normal;
+    }
+  }
+
+  &__license {
+    p {
+      font-size: 0.875rem;
+      margin-top: 34px;
+    }
+  }
+}

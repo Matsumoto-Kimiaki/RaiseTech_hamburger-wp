@@ -1,0 +1,119 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-card {
+  width: calc(100vw * 336 /#{$width-sp});
+  display: flex;
+  flex-direction: column;
+  @include mq(tab) {
+    width: calc(100vw * 756 /#{$width-tab});
+    flex-direction: row;
+  }
+  @include mq(pc) {
+    width: calc(100vw * 1353 /#{$width-pc});
+  }
+
+  &__eye-catch {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 330/230;
+    @include mq(tab) {
+      width: 50%;
+      aspect-ratio: 378 / 355;
+      object-fit: cover;
+    }
+    @include mq(pc) {
+      aspect-ratio: 677 / 471;
+    }
+  }
+
+  &__figcaption {
+    padding-left: calc(100vw * 17.6 /#{$width-sp});
+    padding-top: 31.5px;
+    @include mq(tab) {
+      padding-left: calc(100vw * 34.7 /#{$width-tab});
+      padding-top: 30px;
+    }
+    @include mq(pc) {
+      padding-left: calc(100vw * 63 /#{$width-pc});
+      padding-top: 53px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-size: bold;
+      @include mq(pc) {
+        font-size: 1.65rem;
+      }
+      @include mq(pc2) {
+        font-size: 2.25rem;
+      }
+    }
+
+    h4 {
+      font-weight: bold;
+      margin-top: 24px;
+      margin-bottom: 10px;
+      @include mq(pc) {
+        font-size: 1.5rem;
+        margin-top: 47px;
+        margin-bottom: 17px;
+      }
+    }
+
+    p {
+      width: calc(100vw * 243 /#{$width-sp});
+      height: 114px;
+      line-height: 23px;
+      overflow: hidden;
+      @include mq(tab) {
+        width: calc(100vw * 284 /#{$width-tab});
+      }
+      @include mq(pc) {
+        height: 73px;
+        width: calc(100vw * 509 /#{$width-pc});
+      }
+    }
+
+    &__button {
+      width: calc(100vw * 163 /#{$width-sp});
+      height: 42px;
+      margin-left: calc(100vw * 62.9 /#{$width-sp});
+      margin-top: 40px;
+      margin-bottom: 50.7px;
+      background-color: #fff;
+      border-radius: 20px;
+      @include mq(tab) {
+        width: calc(100vw * 163 /#{$width-tab});
+        margin-left: calc(100vw * 80 /#{$width-tab});
+        margin-top: 45px;
+        margin-bottom: 40px;
+      }
+      @include mq(pc) {
+        width: calc(100vw * 292 /#{$width-pc});
+        height: 60px;
+        margin-left: calc(100vw * 142 /#{$width-pc});
+        margin-top: 68px;
+        margin-bottom: 68px;
+        border-radius: 50px;
+      }
+      @include mq(pc2) {
+        height: 76px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
+
+      a {
+        color: #707070;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.p-card + .p-card {
+  margin-top: 13.9px;
+  @include mq(tab) {
+    margin-top: 20.5px;
+  }
+}

@@ -1,0 +1,14 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-menu-card {
+    margin-top: 19px;
+    padding-left: calc(100vw * 20 /#{$width-sp});
+    @include mq(tab) {
+        margin-top: 70px;
+        padding-left: calc(100vw * 43 /#{$width-tab});
+    }
+    @include mq(pc) {
+        padding-left: calc(100vw * 100 /#{$width-pc});
+    }
+}

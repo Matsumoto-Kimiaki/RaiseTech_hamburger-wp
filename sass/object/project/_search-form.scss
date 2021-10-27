@@ -1,0 +1,49 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-search-form {
+  height: 46px;
+  width: calc(100vw * 320 /#{$width-sp});
+  margin-left: calc(100vw * 24 /#{$width-sp});
+  display: flex;
+  @include mq(tab) {
+    width: calc(100vw * 546 /#{$width-tab});
+    margin-left: calc(100vw * 144 /#{$width-tab});
+  }
+  @include mq(pc) {
+    width: calc(100vw * 545 /#{$width-pc});
+  }
+  &__box {
+    width: calc(100vw * 230 /#{$width-sp});
+    margin-right: calc(100vw * 12 /#{$width-sp});
+    padding-left: calc(100vw * 16 /#{$width-sp}); //アイコンの位置設定
+    background-color: #fff;
+    @include mq(tab) {
+      width: calc(100vw * 396 /#{$width-tab});
+      margin-right: calc(100vw * 14 /#{$width-tab});
+      padding-left: calc(100vw * 12 /#{$width-tab});
+    }
+    @include mq(pc) {
+      width: calc(100vw * 396 /#{$width-pc});
+      margin-right: calc(100vw * 13 /#{$width-pc});
+      padding-left: calc(100vw * 12 /#{$width-pc});
+    }
+  }
+  .fas.fa-search {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.5rem;
+    color: $grey;
+  }
+  &__button {
+    font-size: 1rem;
+    font-weight: bold;
+    width: calc(100vw * 78 /#{$width-sp});
+    background: $cream;
+    @include mq(tab) {
+      width: calc(100vw * 136 /#{$width-tab});
+    }
+    @include mq(pc) {
+      width: calc(100vw * 136 /#{$width-pc});
+    }
+  }
+}

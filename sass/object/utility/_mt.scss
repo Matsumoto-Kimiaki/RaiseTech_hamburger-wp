@@ -1,0 +1,9 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.u-mt + .u-mt {
+  margin-top: 30px;
+  @include mq(tab) {
+    margin-top: 60px;
+  }
+}

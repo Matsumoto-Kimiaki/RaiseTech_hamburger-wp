@@ -1,0 +1,114 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-access {
+  margin-top: 49px;
+  position: relative;
+  @include mq(tab) {
+    margin-top: 40px;
+  }
+  @include mq(pc) {
+    margin-top: 134px;
+  }
+
+  &__description {
+    padding-top: 107px;     //要素に高さを持たせるため、z-indexは使わない
+    padding-bottom: 51px;
+    @include mq(tab) {
+      padding-top: 122px;
+      padding-bottom: 42px;
+    }
+    @include mq(pc) {
+      padding-top: 253px;
+      padding-bottom: 65px;
+    }
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      z-index: -3;                //黒い背景は疑似要素を使って、一番下層に指定
+    }
+
+    h2 {
+      position: absolute;
+      top: 25px;
+      left: calc(100vw * 42 /#{$width-sp});
+      font-size: 1.875rem;
+      font-weight: bold;
+      @include mq(tab) {
+        top: 40px;
+        left: calc(100vw * 42 /#{$width-tab});
+      }
+      @include mq(pc) {
+        top: 83px;
+        left: calc(100vw * 119 /#{$width-pc});
+      }
+
+      &::after {
+        position: absolute;
+        top: 62px;
+        left: 0;
+        content: "";
+        width: calc(100vw * 75 /#{$width-sp});
+        height: 2px;
+        background-color: #fff;
+        @include mq(tab) {
+          width: calc(100vw * 75 /#{$width-tab});
+        }
+        @include mq(pc) {
+          width: calc(100vw * 75 /#{$width-pc});
+        }
+      }
+    }
+
+      p {
+        width: calc(100vw * 295 /#{$width-sp});
+        margin-left: calc(100vw * 40 /#{$width-sp});
+        font-size: 0.875rem;
+        line-height: 33px;
+        @include mq(tab) {
+          width: calc(100vw * 763 /#{$width-tab});
+          margin-left: calc(100vw * 42 /#{$width-tab});
+        }
+        @include mq(pc) {
+          width: calc(100vw * 697 /#{$width-pc});
+          margin-left: calc(100vw * 119 /#{$width-pc});
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &__map {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;        //文字より下層に位置指定
+      opacity: 0.6;
+    }
+
+    &__layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60%;
+      z-index: -1;         //文字より下層に位置指定
+      background-color: #000;
+      opacity: 0.29;
+      @include mq(tab) {
+        height: 100%;
+      }
+      @include mq(pc) {
+        width: 61.2%;
+        height: 100%;
+      }
+    }
+  }
+

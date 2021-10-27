@@ -1,0 +1,10 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.u-font-white {
+    color: #fff;
+}
+
+.u-font-grey {
+    color: $grey;
+}

@@ -1,0 +1,9 @@
+@use "../foundation/mixin" as *;
+@use "../foundation/variable" as *;
+
+.l-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background-color: #FFFDFA;
+}

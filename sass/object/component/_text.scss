@@ -1,0 +1,19 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.c-text {
+  width: calc(100vw * 335 /#{$width-sp});
+  padding-bottom: 177px;
+  @include mq(tab) {
+    width: calc(100vw * 714 /#{$width-tab});
+    padding-bottom: 228px;
+  }
+  @include mq(pc) {
+    width: calc(100vw * 1353 /#{$width-pc});
+    padding-bottom: 353px;
+  }
+
+  p {
+    font-weight: bold;
+  }
+}

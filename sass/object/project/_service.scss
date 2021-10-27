@@ -1,0 +1,116 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-service {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; //flex-direction: columnのため、align-itemsで中央揃え
+  background-size: cover;
+  background-position: center center;
+  @include mq(tab) {
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  @include mq(pc) {
+    margin-top: 120px;
+  }
+  &__item {
+    background-image: url(images/index_img01.jpg);
+    width: calc(100vw * 335 /#{$width-sp});
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    @include mq(tab) {
+      width: calc(100vw * 357 /#{$width-tab});
+    }
+    @include mq(pc) {
+      width: calc(100vw * 625 /#{$width-pc});
+      padding-bottom: 20px;
+    }
+
+    &__title {
+      position: relative;
+      font-size: 2.56em;
+      font-weight: bold;
+      padding-top: 13px;
+      margin-left: calc(100vw * 10 /#{$width-sp});
+      margin-bottom: 235px;
+      @include mq(tab) {
+        margin-left: calc(100vw * 10 /#{$width-tab});
+      }
+      @include mq(pc) {
+        font-size: 5em;
+        margin-bottom: 679px;
+      }
+
+      &::after {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        content: "";
+        width: 10%;
+        height: 4px;
+        background-color: #fff;
+        @include mq(pc) {
+          top: 125px;
+        }
+      }
+    }
+
+    &__description {
+      width: calc(100vw * 314 /#{$width-sp});
+      @include mq(tab) {
+        width: calc(100vw * 334 /#{$width-tab});
+        max-width: 390px;
+      }
+      @include mq(pc) {
+        width: calc(100vw * 585 /#{$width-pc});
+      }
+    }
+  }
+}
+
+.p-service__item.-takein {    //背景画像のmodifier
+  background-image: url(images/index_img02.jpg);
+}
+
+.p-service dl {
+  background-color: rgba(255,255,255,0.8);     //opacityだと文字も透過されるので、rgbaで指定
+  padding-top: 19px;
+  padding-left: calc(100vw * 11 /#{$width-sp});
+  padding-bottom: 46px;
+  @include mq(tab) {
+    padding-left: calc(100vw * 11 /#{$width-tab});
+  }
+  dt {
+    font-size: 1.375rem;
+    font-family: "M+ M Type-1 (basic latin) Bold", "M+ Type-1 (general-j) Bold", sans-serif;
+    @include mq(pc) {
+      font-size: 1.5rem;
+    }
+  }
+  dd {
+    font-weight: normal;
+    margin-top: 19px;
+  }
+}
+
+.p-service dl + dl {
+  margin-top: 10px;
+  @include mq(pc) {
+    margin-top: 20px;
+  }
+}
+
+.p-service section + section {
+  margin-top: 20px;
+  @include mq(tab) {
+    margin-top: 0;
+    margin-left: calc(100vw * 41 /#{$width-tab});
+  }
+  @include mq(pc) {
+    margin-left: calc(100vw * 80 /#{$width-pc});
+  }
+}

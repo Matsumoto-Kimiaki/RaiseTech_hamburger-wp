@@ -1,0 +1,37 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.c-table {
+  width: calc(100vw * 335 /#{$width-sp});
+  border-collapse: collapse;
+  background-color: #fff;
+  @include mq(tab) {
+    width: calc(100vw * 714 /#{$width-tab});
+  }
+  @include mq(pc) {
+    width: calc(100vw * 1353 /#{$width-pc});
+  }
+
+  td {
+    border: solid 1px;
+    padding-left: calc(100vw * 30 /#{$width-sp});
+    padding-top: 28px;
+    padding-bottom: 27px;
+    @include mq(tab) {
+      padding-left: calc(100vw * 30 /#{$width-tab});
+    }
+    @include mq(pc) {
+      padding-left: calc(100vw * 30 /#{$width-pc});
+    }
+
+    &:nth-child(2n + 1) {
+      width: 40%;
+      @include mq(tab) {
+        width: 30%;
+      }
+      @include mq(pc) {
+        width: 31.7%;
+      }
+    }
+  }
+}

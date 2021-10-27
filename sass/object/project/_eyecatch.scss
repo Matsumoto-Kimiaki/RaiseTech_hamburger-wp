@@ -1,0 +1,147 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-eyecatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__wide {
+    width: calc(100vw * 335 /#{$width-sp});
+    height: auto;
+    aspect-ratio: 335/114;
+    object-fit: cover;
+    object-position: bottom;
+    @include mq(tab) {
+      width: calc(100vw * 714 /#{$width-tab});
+    }
+    @include mq(pc) {
+      width: calc(100vw * 1353 /#{$width-pc});
+    }
+  }
+
+  &__left {
+    width: calc(100vw * 335 /#{$width-sp});
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include mq(tab) {
+      width: calc(100vw * 714 /#{$width-tab});
+      margin-top: 60px;
+    }
+    @include mq(pc) {
+      width: calc(100vw * 1353 /#{$width-pc});
+    }
+
+    &__image {
+      width: calc(100vw * 144 /#{$width-sp});
+      height: auto;
+      aspect-ratio: 144/89;
+      @include mq(tab) {
+        width: calc(100vw * 306 /#{$width-tab});
+      }
+      @include mq(pc) {
+        width: calc(100vw * 581 /#{$width-pc});
+      }
+    }
+
+    &__caption {
+      width: calc(100vw * 183 /#{$width-sp});
+      height: 176px;
+      overflow: hidden;
+      @include mq(tab) {
+        width: calc(100vw * 387 /#{$width-tab});
+        height: 373px;
+      }
+      @include mq(pc) {
+        width: calc(100vw * 733 /#{$width-pc});
+        height: 191px;
+      }
+
+      p {
+        line-height: 23px;
+      }
+    }
+  }
+
+  &__right {
+    @extend .p-eyecatch__left;
+
+    &__image {
+      @extend .p-eyecatch__left__image;
+    }
+
+    &__caption {
+      @extend .p-eyecatch__left__caption;
+    }
+  }
+
+  &__center {
+    width: calc(100vw * 267 /#{$width-sp});
+    height: auto;
+    margin-top: 30px;
+    aspect-ratio: 267/166;
+    @include mq(tab) {
+      width: calc(100vw * 581 /#{$width-tab});
+      margin-top: 60px;
+    }
+    @include mq(pc) {
+      width: calc(100vw * 581 /#{$width-pc});
+    }
+  }
+
+  &__list {
+    width: calc(100vw * 335 /#{$width-sp});
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    @include mq(tab) {
+      width: calc(100vw * 714 /#{$width-tab});
+      margin-top: 241px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include mq(pc) {
+      width: calc(100vw * 1356 /#{$width-pc});
+      margin-top: 60px;
+    }
+
+    &__item {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 335/205;
+      &:nth-child(n + 2) {
+        margin-top: 20px;
+      }
+      @include mq(tab) {
+        width: calc(100vw * 349 /#{$width-tab});
+        &:nth-child(n + 2) {
+          margin-top: 0;
+        }
+        &:nth-child(n + 3) {
+          margin-top: 20px;
+        }
+        &:nth-child(2n) {
+          margin-left: calc(100vw * 16 /#{$width-tab});
+        }
+      }
+      @include mq(pc) {
+        width: calc(100vw * 438 /#{$width-pc});
+        &:nth-child(n + 3) {
+          margin-top: 0;
+        }
+        &:nth-child(n + 4) {
+          margin-top: 20px;
+        }
+        &:nth-child(2n) {
+          margin-left: 0;
+        }
+        &:nth-child(3n + 2) {
+          margin-left: calc(100vw * 20 /#{$width-pc});
+          margin-right: calc(100vw * 20 /#{$width-pc});
+        }
+      }
+    }
+  }
+}

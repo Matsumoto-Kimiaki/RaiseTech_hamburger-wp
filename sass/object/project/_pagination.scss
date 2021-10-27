@@ -1,0 +1,80 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: calc(100vw * 20 /#{$width-sp});
+  padding-right: calc(100vw * 20 /#{$width-sp});
+  color: $grey;
+  @include mq(tab) {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__information {
+    display: none;
+    @include mq(tab) {
+      display: block;
+    }
+  }
+
+  &__previous span {
+    margin-left: 8.2px;
+    margin-right: 8.2px;
+    @include mq(tab) {
+      margin-left: 19.3px;
+      margin-right: 17.2px;
+    }
+  }
+
+  &__previous a {
+    display: flex;
+  }
+  &__previous p {
+    font-family: 'M PLUS 1p';
+    @include mq(tab) {
+      display: none;
+    }
+  }
+
+  &__item {
+    display: none;
+    &:hover {
+        background-color: #3C2B1C;
+        color: #fff;
+    }
+    @include mq(tab) {
+      display: block;
+      width: 35px;
+      height: 35px;
+      border: 1px solid;
+      line-height: 35px;
+      text-align: center;
+    }
+  }
+
+  &__next span {
+    margin-left: 7.3px;
+    @include mq(tab) {
+      margin-left: 17.3px;
+    }
+  }
+
+  &__next a {
+    display: flex;
+  }
+
+  &__next p {
+    font-family: 'M PLUS 1p';
+    @include mq(tab) {
+      display: none;
+    }
+  }
+
+  .p-pagination__item + .p-pagination__item {
+    margin-left: 15px;
+  }
+}

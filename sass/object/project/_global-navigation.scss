@@ -1,0 +1,50 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-global-navigation {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  text-align: center;                   
+  @include mq(pc) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    padding-left: calc(100vw * 65 /#{$width-pc});
+    padding-right: calc(100vw * 31 /#{$width-pc});
+  }
+
+  &__logo-title {
+    margin-top: 40px;
+    margin-bottom: 38px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    @include mq(pc) {
+      margin-top: 0; //余白の解除
+      margin-bottom: 0;
+      font-size: 4rem;
+    }
+  }
+
+  &__logo-menu {
+    width: calc(100vw * 51 /#{$width-sp});
+    position: absolute;
+    top: 14px;
+    right: calc(100vw * 16 /#{$width-sp});
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    @include mq(tab) {
+      width: calc(100vw * 86 /#{$width-tab});
+      top: 18px;
+      right: calc(100vw * 26 /#{$width-tab});
+      font-size: 2.125rem;
+    }
+    @include mq(pc) {
+      top: 97px;
+      right: calc(100vw * 149 /#{$width-pc});
+    }
+  }
+}

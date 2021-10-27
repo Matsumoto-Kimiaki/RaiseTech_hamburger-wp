@@ -1,0 +1,55 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-menu-list {
+  width: calc(100vw * 328 /#{$width-sp});
+  height: 100vh;
+  padding-top: 212px;
+  padding-left: calc(100vw * 46 /#{$width-sp});
+  background-color: #f2ede9;
+  padding-bottom: 150px;
+  overflow-y: scroll;
+
+  @include mq(tab) {
+    width: calc(100vw * 367 /#{$width-tab});
+    padding-left: calc(100vw * 46 /#{$width-tab});
+  }
+  @include mq(pc) {
+    width: calc(100vw * 367 /#{$width-pc});
+    padding-left: calc(100vw * 46 /#{$width-pc});
+    overflow-y: visible;
+    padding-bottom: 10000px;  //sidebarの高さを左側に合わせるため。l-gridにoverflow: hiddenを追加
+    margin-bottom: -10000px;
+  }
+  &__item__sub {
+    margin-left: calc(100vw * 20 /#{$width-sp});
+    margin-top: 40px;
+    margin-bottom: 34px;
+    @include mq(tab) {
+      margin-left: calc(100vw * 20 /#{$width-tab});
+    }
+    @include mq(pc) {
+      margin-left: calc(100vw * 20 /#{$width-pc});
+    }
+
+    li + li {
+      margin-top: 23px;
+    }
+
+    li {
+      cursor: pointer;
+      font-size: 1.25rem;
+      @include mq(pc) {
+        font-size: 1rem;
+      }
+      @include mq(pc2) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}

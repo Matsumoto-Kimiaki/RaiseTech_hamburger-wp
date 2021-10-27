@@ -1,0 +1,35 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.c-cross-button {
+  position: absolute;
+  top: 41px;
+  left: calc(100vw * 279 /#{$width-sp});
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  @include mq(tab) {
+    left: calc(100vw * 294 /#{$width-tab});
+  }
+  @include mq(pc) {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 6px;
+    background-color: $grey;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width:45px;
+    height: 6px;
+    background-color: $grey;
+    transform: rotate(-45deg);
+  }
+}

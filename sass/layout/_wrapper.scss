@@ -1,0 +1,9 @@
+@use "../foundation/mixin" as *;
+@use "../foundation/variable" as *;
+
+.l-wrapper {
+    width: 100%;
+    @include mq(pc) {
+    width: calc(100vw * 1553 /#{$width-pc});
+    }
+}
