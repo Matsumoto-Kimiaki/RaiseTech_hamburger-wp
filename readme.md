@@ -1,4 +1,4 @@
-# RaiseTech課題 ハンバーガーサイトのWordPress化
+# RaiseTech課題 ハンバーガーサイトのWordPress化です。
 ## 使用した環境
 - macOS 11.6
 - node 14.17.6

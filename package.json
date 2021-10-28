@@ -1,5 +1,5 @@
 {
-  "name": "hamburger",
+  "name": "hamburger-wp",
   "version": "1.0.0",
   "description": "- macOS 11.6 - node 14.17.6 - npm 6.14.15 - gulp 4.0.2 ## 説明 - Dart-Sassで記述 - gulpを使用   - コマンド     - 「npx gulp compile」でコンパイルします     - 「npx gulp watch」でコンパイル＋ファイル監視します   - プラグイン     - sass     - gulp-sass     - gulp-sass-glob-use-forward     - gulp-autoprefixer     - gulp-plumber",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Matsumoto-Kimiaki/RaiseTech_hamburger.git"
+    "url": "git+https://github.com/Matsumoto-Kimiaki/RaiseTech_hamburger-wp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Matsumoto-Kimiaki/RaiseTech_hamburger/issues"
+    "url": "https://github.com/Matsumoto-Kimiaki/RaiseTech_hamburger-wp/issues"
   },
-  "homepage": "https://github.com/Matsumoto-Kimiaki/RaiseTech_hamburger#readme",
+  "homepage": "https://github.com/Matsumoto-Kimiaki/RaiseTech_hamburger-wp#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
