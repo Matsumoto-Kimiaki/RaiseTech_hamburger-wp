@@ -17,7 +17,7 @@
     margin-top: 120px;
   }
   &__item {
-    background-image: url(images/index_img01.jpg);
+    background-image: url(../images/index_img01.jpg);
     width: calc(100vw * 335 /#{$width-sp});
     padding-bottom: 10px;
     display: flex;
@@ -73,7 +73,7 @@
 }
 
 .p-service__item.-takein {    //背景画像のmodifier
-  background-image: url(images/index_img02.jpg);
+  background-image: url(../images/index_img02.jpg);
 }
 
 .p-service dl {

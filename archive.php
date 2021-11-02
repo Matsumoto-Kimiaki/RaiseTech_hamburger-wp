@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ハンバーガーサイト | アーカイブサーチページ</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>ハンバーガーサイト | アーカイブページ</title>
+    <link rel="stylesheet" href="css/style.css" />
     <!-- M PLUS 1p -->
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;700&display=swap" rel="stylesheet" />
     <!-- Roboto -->
@@ -36,7 +36,7 @@
           <div class="p-hero--archive">
             <div class="p-hero--archive__bg"></div>
             <div class="p-hero--archive__title u-font-white u-font-roboto">
-              <h2>Search:</h2>
+              <h2>Menu:</h2>
               <p>チーズバーガー</p>
             </div>
           </div>
@@ -52,9 +52,9 @@
           <!-- 記事 -->
           <article class="p-menu-card">
             <figure class="p-card c-card u-font-white">
-              <img class="p-card__eye-catch" src="images/archive_img01.jpg" alt="チーズバーガー" />
+              <img class="p-card__eye-catch" src="../images/archive_img01.jpg" alt="チーズバーガー" />
               <figcaption class="p-card__figcaption">
-                <h3>見出しが入ります</h3>
+                <h3>チーズバーガー</h3>
                 <h4>小見出しが入ります</h4>
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 <button class="p-card__figcaption__button c-button"><a href="single.html">詳しく見る</a></button>
@@ -62,9 +62,9 @@
             </figure>
 
             <figure class="p-card c-card u-font-white">
-              <img class="p-card__eye-catch" src="images/archive_img01.jpg" width="336" height="230" alt="チーズバーガー" />
+              <img class="p-card__eye-catch" src="../images/archive_img01.jpg" width="336" height="230" alt="チーズバーガー" />
               <figcaption class="p-card__figcaption">
-                <h3>見出しが入ります</h3>
+                <h3>ダブルチーズバーガー</h3>
                 <h4>小見出しが入ります</h4>
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 <button class="p-card__figcaption__button c-button"><a href="single.html">詳しく見る</a></button>
@@ -72,35 +72,14 @@
             </figure>
 
             <figure class="p-card c-card u-font-white">
-              <img class="p-card__eye-catch" src="images/archive_img01.jpg" width="336" height="230" alt="チーズバーガー" />
+              <img class="p-card__eye-catch" src="../images/archive_img01.jpg" width="336" height="230" alt="チーズバーガー" />
               <figcaption class="p-card__figcaption">
-                <h3>見出しが入ります</h3>
+                <h3>スペシャルチーズバーガー</h3>
                 <h4>小見出しが入ります</h4>
                 <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 <button class="p-card__figcaption__button c-button"><a href="single.html">詳しく見る</a></button>
               </figcaption>
             </figure>
-
-            <figure class="p-card c-card u-font-white">
-              <img class="p-card__eye-catch" src="images/archive_img01.jpg" width="336" height="230" alt="チーズバーガー" />
-              <figcaption class="p-card__figcaption">
-                <h3>見出しが入ります</h3>
-                <h4>小見出しが入ります</h4>
-                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                <button class="p-card__figcaption__button c-button"><a href="single.html">詳しく見る</a></button>
-              </figcaption>
-            </figure>
-
-            <figure class="p-card c-card u-font-white">
-              <img class="p-card__eye-catch" src="images/archive_img01.jpg" width="336" height="230" alt="チーズバーガー" />
-              <figcaption class="p-card__figcaption">
-                <h3>見出しが入ります</h3>
-                <h4>小見出しが入ります</h4>
-                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                <button class="p-card__figcaption__button c-button"><a href="single.html">詳しく見る</a></button>
-              </figcaption>
-            </figure>
-
           </article>
 
           <!-- ページネーション -->

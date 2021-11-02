@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ハンバーガーサイト | ショップページ</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>ハンバーガーサイト | シングルページ</title>
+    <link rel="stylesheet" href="css/style.css" />
     <!-- M PLUS 1p -->
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;700&display=swap" rel="stylesheet" />
     <!-- Roboto -->
@@ -36,9 +36,9 @@
           
           <div class="l-content">
           <!-- メインビジュアル -->
-          <div class="p-hero--page u-mt">
+          <div class="p-hero--single u-mt">
             <div class="p-hero--single__title u-font-white">
-              <h1>ショップについて</h1>
+              <h1>h1 チーズバーガー</h1>
             </div>
           </div>
 
@@ -67,11 +67,11 @@
             <div class="p-eyecatch u-mt">
 
               <!-- ワイド画像 -->
-              <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__wide" />
+              <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__wide" />
 
               <!-- レフト画像 -->
               <figure class="p-eyecatch__left">
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__left__image" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__left__image" />
                 <figcaption class="p-eyecatch__left__caption">
                   <p>
                     テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
@@ -90,23 +90,23 @@
                     テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                   </p>
                 </figcaption>
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__right__image" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__right__image" />
               </figure>
 
               <!-- センター画像 -->
-              <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__center" />
+              <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__center" />
 
               <!-- 画像リスト -->
               <div class="p-eyecatch__list">
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
-                <img src="images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
+                <img src="../images/single_img01.jpg" alt="チーズバーガー" class="p-eyecatch__list__item" />
               </div>
             </div>
 

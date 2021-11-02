@@ -2,7 +2,7 @@
 @use "../../foundation/variable" as *;
 
 .p-hero {
-  background-image: url(images/index_hero_img.jpg);
+  background-image: url(../images/index_hero_img.jpg);
   background-size: cover;
   background-position: center center;
   padding-left: calc(100vw * 25 /#{$width-sp});
@@ -69,7 +69,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(images/archive_hero_img.jpg);
+    background-image: url(../images/archive_hero_img.jpg);
     background-size: cover;
     background-position: 30% center;
     opacity: 0.5;
@@ -104,7 +104,7 @@
 .p-hero--single {
   width: 100%;
   height: auto;
-  background-image: url(images/single_hero_img.jpg);
+  background-image: url(../images/single_hero_img.jpg);
   background-size: cover;
   background-position: center center;
   aspect-ratio: 5/3;
@@ -135,5 +135,5 @@
 
 .p-hero--page {
   @extend .p-hero--single;
-  background-image: url(images/page_hero_img.jpg);
+  background-image: url(../images/page_hero_img.jpg);
 }

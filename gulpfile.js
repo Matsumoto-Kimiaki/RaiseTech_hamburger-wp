@@ -24,7 +24,7 @@ function compile(done) {
     .pipe(sassGlob())                  // glob機能を使って@useや@forwardを省略する
     .pipe(sass())                      // sassのコンパイルをする
     .pipe(autoprefixer())              // ベンダープレフィックスを自動付与する
-    .pipe(dest("."));
+    .pipe(dest("./css/"));
 
   done();
 }
