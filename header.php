@@ -18,7 +18,7 @@
             <header>
                 <div class="l-header u-font-grey">
                     <nav class="p-global-navigation">
-                        <h1 class="p-global-navigation__logo-title u-font-roboto"><a href="<?php echo home_url(); ?>">Hamburger</a></h1>
+                        <h1 class="p-global-navigation__logo-title u-font-roboto"><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
                         <h3 class="p-global-navigation__logo-menu js-menu u-font-roboto">Menu</h3>
                         <?php get_search_form(); ?>
                     </nav>

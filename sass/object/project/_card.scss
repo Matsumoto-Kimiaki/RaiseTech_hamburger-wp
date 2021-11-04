@@ -13,7 +13,7 @@
     width: calc(100vw * 1353 /#{$width-pc});
   }
 
-  &__eye-catch {
+  .wp-post-image {
     width: 100%;
     height: auto;
     aspect-ratio: 330/230;
@@ -39,9 +39,9 @@
       padding-top: 53px;
     }
 
-    h3 {
+    &__title {
       font-size: 1.25rem;
-      font-size: bold;
+      font-weight: bold;
       @include mq(pc) {
         font-size: 1.65rem;
       }
@@ -50,7 +50,8 @@
       }
     }
 
-    h4 {
+    h2 {
+      font-size: 1rem;
       font-weight: bold;
       margin-top: 24px;
       margin-bottom: 10px;

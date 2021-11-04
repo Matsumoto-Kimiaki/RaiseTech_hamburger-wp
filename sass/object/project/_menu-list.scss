@@ -9,6 +9,8 @@
   background-color: #f2ede9;
   padding-bottom: 150px;
   overflow-y: scroll;
+  font-size: 1.5rem;
+  font-weight: bold;
 
   @include mq(tab) {
     width: calc(100vw * 367 /#{$width-tab});
@@ -21,10 +23,11 @@
     padding-bottom: 10000px;  //sidebarの高さを左側に合わせるため。l-gridにoverflow: hiddenを追加
     margin-bottom: -10000px;
   }
-  &__item__sub {
+  .sub-menu {
     margin-left: calc(100vw * 20 /#{$width-sp});
     margin-top: 40px;
     margin-bottom: 34px;
+    font-weight: normal;
     @include mq(tab) {
       margin-left: calc(100vw * 20 /#{$width-tab});
     }
@@ -46,10 +49,5 @@
         font-size: 1.25rem;
       }
     }
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
   }
 }
