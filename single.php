@@ -162,6 +162,7 @@
     </div>
   </div>
 </main>
+</div>
 
 <?php get_sidebar(); ?>
 

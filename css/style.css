@@ -1072,6 +1072,7 @@ img {
   .p-global-navigation__logo-menu {
     top: 97px;
     right: calc(100vw * 149 /1920);
+    cursor: default;
   }
 }
 
@@ -1577,6 +1578,13 @@ img {
   opacity: 1;
   /* メニューが表示されているときには背景が表示 */
 }
+@media (min-width: 1025px) {
+  .p-menu-bg.is-open {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
 
 .p-menu-card {
   margin-top: 19px;
@@ -1654,7 +1662,109 @@ img {
   }
 }
 
-.p-pagination {
+.wp-pagenavi {
+  display: none;
+}
+@media (min-width: 600px) {
+  .wp-pagenavi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    color: #707070;
+    font-family: "Roboto", sans-serif;
+  }
+}
+.wp-pagenavi .pages {
+  display: none;
+}
+@media (min-width: 600px) {
+  .wp-pagenavi .pages {
+    display: block;
+    font-family: "M PLUS 1p";
+    border-style: none;
+    margin-right: 19.3px;
+  }
+}
+.wp-pagenavi .previouspostslink {
+  display: none;
+  margin-right: 8.2px;
+  border-style: none;
+}
+@media (min-width: 600px) {
+  .wp-pagenavi .previouspostslink {
+    display: block;
+    margin-right: 17.2px;
+  }
+}
+.wp-pagenavi .current {
+  display: none;
+}
+@media (min-width: 600px) {
+  .wp-pagenavi .current {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid;
+    line-height: 35px;
+    text-align: center;
+    background-color: #3c2b1c;
+    color: #fff;
+  }
+}
+.wp-pagenavi .page {
+  display: none;
+}
+@media (min-width: 600px) {
+  .wp-pagenavi .page {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid;
+    line-height: 35px;
+    text-align: center;
+  }
+}
+.wp-pagenavi .nextpostslink {
+  display: none;
+  margin-left: 8.2px;
+  border-style: none;
+}
+@media (min-width: 600px) {
+  .wp-pagenavi .nextpostslink {
+    display: block;
+    margin-left: 19.3px;
+  }
+}
+.wp-pagenavi span {
+  margin: 0;
+  padding: 0;
+}
+.wp-pagenavi a {
+  margin: 0;
+  padding: 0;
+}
+
+.page + .page {
+  margin-left: 15px;
+}
+
+.current + .page {
+  margin-left: 15px;
+}
+
+.page + .current {
+  margin-left: 15px;
+}
+
+.l-pagination .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1667,87 +1777,12 @@ img {
   padding-left: calc(100vw * 20 /375);
   padding-right: calc(100vw * 20 /375);
   color: #707070;
+  font-family: "Roboto", sans-serif;
 }
 @media (min-width: 600px) {
-  .p-pagination {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-.p-pagination__information {
-  display: none;
-}
-@media (min-width: 600px) {
-  .p-pagination__information {
-    display: block;
-  }
-}
-.p-pagination__previous span {
-  margin-left: 8.2px;
-  margin-right: 8.2px;
-}
-@media (min-width: 600px) {
-  .p-pagination__previous span {
-    margin-left: 19.3px;
-    margin-right: 17.2px;
-  }
-}
-.p-pagination__previous a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.p-pagination__previous p {
-  font-family: "M PLUS 1p";
-}
-@media (min-width: 600px) {
-  .p-pagination__previous p {
+  .l-pagination .nav-links {
     display: none;
   }
-}
-.p-pagination__item {
-  display: none;
-}
-.p-pagination__item:hover {
-  background-color: #3C2B1C;
-  color: #fff;
-}
-@media (min-width: 600px) {
-  .p-pagination__item {
-    display: block;
-    width: 35px;
-    height: 35px;
-    border: 1px solid;
-    line-height: 35px;
-    text-align: center;
-  }
-}
-.p-pagination__next span {
-  margin-left: 7.3px;
-}
-@media (min-width: 600px) {
-  .p-pagination__next span {
-    margin-left: 17.3px;
-  }
-}
-.p-pagination__next a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.p-pagination__next p {
-  font-family: "M PLUS 1p";
-}
-@media (min-width: 600px) {
-  .p-pagination__next p {
-    display: none;
-  }
-}
-.p-pagination .p-pagination__item + .p-pagination__item {
-  margin-left: 15px;
 }
 
 .p-search-form {

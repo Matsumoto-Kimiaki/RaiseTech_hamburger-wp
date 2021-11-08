@@ -4,7 +4,7 @@
   <div class="l-main">
     <!-- メインビジュアル -->
     <div class="p-hero">
-      <h2 class="p-hero__title u-font-white"><?php bloginfo('description');?></h2>
+      <h2 class="p-hero__title u-font-white"><?php bloginfo('description'); ?></h2>
     </div>
 
     <!-- サービス -->

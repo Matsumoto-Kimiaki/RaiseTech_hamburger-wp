@@ -45,6 +45,7 @@
     @include mq(pc) {
       top: 97px;
       right: calc(100vw * 149 /#{$width-pc});
+      cursor: default;
     }
   }
 }
