@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as *;
 @use "../../foundation/variable" as *;
 
-.c-table {
+.wp-block-table {
   width: calc(100vw * 335 /#{$width-sp});
   border-collapse: collapse;
   background-color: #fff;

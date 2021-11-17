@@ -1,3 +1,4 @@
+
 <?php get_header(); ?>
 
 <main>
@@ -10,7 +11,10 @@
     <!-- サービス -->
     <div class="p-service">
       <section class="p-service__item">
-        <a href="page.html">
+        <?php
+        $eatin = get_term_by('name', 'Eat In', 'category');
+        $eatin_link = get_term_link($eatin, 'category');?>
+        <a href="<?php echo $eatin_link; ?>">
           <h3 class="p-service__item__title u-font-white u-font-roboto">Take Out</h3>
           <div class="p-service__item__description">
             <dl>
@@ -26,7 +30,10 @@
       </section>
 
       <section class="p-service__item -takein">
-        <a href="page.html">
+      <?php
+        $takeout = get_term_by('name', 'Take Out', 'category');
+        $takeout_link = get_term_link($takeout, 'category');?>
+        <a href="<?php echo $takeout_link; ?>">
           <h3 class="p-service__item__title u-font-white u-font-roboto">Eat In</h3>
           <div class="p-service__item__description">
             <dl>

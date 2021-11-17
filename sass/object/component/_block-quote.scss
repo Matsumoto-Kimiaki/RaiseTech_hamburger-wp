@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as *;
 @use "../../foundation/variable" as *;
 
-.c-blockquote {
+.wp-block-quote {
   width: calc(100vw * 335 /#{$width-sp});
   padding-top: 30px;
   padding-bottom: 30px;
@@ -19,7 +19,7 @@
     padding-left: calc(100vw * 50 /#{$width-pc});
   }
 
-  &__text {
+  p {
     width: calc(100vw * 299 /#{$width-sp});
     overflow: hidden;
     @include mq(tab) {
@@ -30,14 +30,16 @@
     }
   }
 
-  &__source {
+  cite {
+    display: block;
     margin-top: 30px;
     @include mq(tab) {
       margin-top: 60px;
     }
-    a {
-      text-decoration: underline;
-      color: #4A6C9B;
-    }
+  }
+
+  a {
+    color: #4A6C9B;
+    text-decoration: underline;
   }
 }

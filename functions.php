@@ -33,3 +33,12 @@ function hamburger_script()
     wp_enqueue_script('main-js', get_template_directory_uri() . '/javascript/main.js', array('jquery'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'hamburger_script');
+
+
+
+add_action( 'after_setup_theme', function(){
+	// ブロックエディタ用スタイル機能をテーマに追加 
+	add_theme_support( 'editor-styles' );
+	// ブロックエディタ用CSSの読み込み
+    add_editor_style( get_template_directory_uri().'/css/editor-style.css' );
+});

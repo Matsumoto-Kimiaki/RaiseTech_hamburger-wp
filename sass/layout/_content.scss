@@ -2,8 +2,18 @@
 @use "../foundation/variable" as *;
 
 .l-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-   background-color: #FFFDFA;
+  padding-bottom: 177px;
+  padding-left: calc(100vw * 19 /#{$width-sp});
+  padding-right: calc(100vw * 19 /#{$width-sp});
+  background-color: #fffdfa;
+  @include mq(tab) {
+    padding-bottom: 228px;
+    padding-left: calc(100vw * 60 /#{$width-tab});
+    padding-right: calc(100vw * 60 /#{$width-tab});
+  }
+  @include mq(pc) {
+    padding-bottom: 353px;
+    padding-left: calc(100vw * 100 /#{$width-pc});
+    padding-right: calc(100vw * 100 /#{$width-pc});
+  }
 }

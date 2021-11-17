@@ -9,10 +9,12 @@
 - gulpを使用
   - コマンド
     - 「npx gulp compile」でコンパイルします
-    - 「npx gulp watch」でコンパイル＋ファイル監視します
+    - 「npx gulp bs」で自動でブラウザーリロードします
+    - 「npx gulp watch」でコンパイル＋ブラウザーリロード＋ファイル監視します
   - プラグイン
     - sass
     - gulp-sass
     - gulp-sass-glob-use-forward
     - gulp-autoprefixer
     - gulp-plumber
+    - browser-sync

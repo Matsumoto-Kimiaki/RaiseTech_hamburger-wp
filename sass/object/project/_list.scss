@@ -1,39 +1,36 @@
 @use "../../foundation/mixin" as *;
 @use "../../foundation/variable" as *;
 
-.p-list {
-  width: calc(100vw * 335 /#{$width-sp});
-  @include mq(tab) {
-    width: calc(100vw * 714 /#{$width-tab});
-    padding-left: calc(100vw * 60 /#{$width-tab});
-  }
-  @include mq(pc) {
-    width: calc(100vw * 1353 /#{$width-pc});
-    padding-left: calc(100vw * 50 /#{$width-pc});
-  }
-
+.l-content {
   ol li {
     list-style-type: decimal;
     list-style-position: inside;
   }
 
-  ol li ol li {
-    margin-left: calc(100vw * 18 /#{$width-sp});
+  ol ol {
+    padding-left: calc(100vw * 18 /#{$width-sp});
     @include mq(tab) {
-      margin-left: calc(100vw * 18 /#{$width-tab});
+      padding-left: calc(100vw * 18 /#{$width-tab});
     }
     @include mq(pc) {
-      margin-left: calc(100vw * 18 /#{$width-pc});
+      padding-left: calc(100vw * 18 /#{$width-pc});
     }
   }
 
-  ul li ul li {
-    margin-left: calc(100vw * 18 /#{$width-sp});
+  ul ul {
+    padding-left: calc(100vw * 18 /#{$width-sp});
     @include mq(tab) {
-      margin-left: calc(100vw * 18 /#{$width-tab});
+      padding-left: calc(100vw * 18 /#{$width-tab});
     }
     @include mq(pc) {
-      margin-left: calc(100vw * 18 /#{$width-pc});
+      padding-left: calc(100vw * 18 /#{$width-pc});
+    }
+  }
+
+  .list-top {
+    margin-top: 30px;
+    @include mq(tab) {
+      margin-top: 60px;
     }
   }
 

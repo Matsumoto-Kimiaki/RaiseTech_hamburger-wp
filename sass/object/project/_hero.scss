@@ -104,7 +104,6 @@
 .p-hero--single {
   width: 100%;
   height: auto;
-  background-image: url(../images/single_hero_img.jpg);
   background-size: cover;
   background-position: center center;
   aspect-ratio: 5/3;
@@ -135,5 +134,4 @@
 
 .p-hero--page {
   @extend .p-hero--single;
-  background-image: url(../images/page_hero_img.jpg);
 }
