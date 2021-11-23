@@ -52,13 +52,13 @@
     <!-- アクセス -->
     <div class="p-access">
       <div class="p-access__description u-font-white">
-        <h2>見出しが入ります</h2>
-        <p>
+        <h2 class="p-access__description__title">見出しが入ります</h2>
+        <p class="p-access__description__text">
           テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
         </p>
       </div>
       <iframe class="p-access__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d877.7779735795153!2d139.7441359417611!3d35.65819699745733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1633362839719!5m2!1sja!2sjp" width="100%" height="auto" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-      <div class="p-access__layer"></div>
+      <!-- <div class="p-access__layer"></div> -->
     </div>
   </div>
 </main>
