@@ -14,7 +14,7 @@
         <?php
         $eatin = get_term_by('name', 'Eat In', 'category');
         $eatin_link = get_term_link($eatin, 'category');?>
-        <a href="<?php echo $eatin_link; ?>">
+        <a href="<?php echo esc_url($eatin_link); ?>">
           <h3 class="p-service__item__title u-font-white u-font-roboto">Take Out</h3>
           <div class="p-service__item__description">
             <dl>
@@ -33,7 +33,7 @@
       <?php
         $takeout = get_term_by('name', 'Take Out', 'category');
         $takeout_link = get_term_link($takeout, 'category');?>
-        <a href="<?php echo $takeout_link; ?>">
+        <a href="<?php echo esc_url($takeout_link); ?>">
           <h3 class="p-service__item__title u-font-white u-font-roboto">Eat In</h3>
           <div class="p-service__item__description">
             <dl>
@@ -58,7 +58,6 @@
         </p>
       </div>
       <iframe class="p-access__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d877.7779735795153!2d139.7441359417611!3d35.65819699745733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1633362839719!5m2!1sja!2sjp" width="100%" height="auto" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-      <!-- <div class="p-access__layer"></div> -->
     </div>
   </div>
 </main>

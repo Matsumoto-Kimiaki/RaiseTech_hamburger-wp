@@ -13,11 +13,6 @@
       </div>
     </div>
 
-    <!-- イントロダクション -->
-    <section class="p-introduction">
-      <?php echo category_description(); ?>
-    </section>
-
     <!-- 記事 -->
     <article class="p-menu-card">
 

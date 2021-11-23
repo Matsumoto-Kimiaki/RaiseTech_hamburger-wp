@@ -9,7 +9,7 @@
         <h2>Menu:</h2>
         <p>
           <?php if (is_category()) {
-            echo single_cat_title();
+            single_cat_title();
           }
           ?>
         </p>
