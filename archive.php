@@ -31,7 +31,7 @@
             <?php the_post_thumbnail('large'); ?>
             <figcaption class="p-card__figcaption">
               <?php the_title('<div class="p-card__figcaption__title">', '</div>'); ?>
-              <?php the_content(); ?>
+              <?php the_excerpt(); ?>
               <button class="p-card__figcaption__button c-button"><a href="<?php the_permalink(); ?>">詳しく見る</a></button>
             </figcaption>
           </figure>
