@@ -18,6 +18,7 @@
   }
   &__item {
     background-image: url(../images/index_img01.jpg);
+    background-size: cover;
     width: calc(100vw * 335 /#{$width-sp});
     padding-bottom: 10px;
     display: flex;
