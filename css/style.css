@@ -1847,7 +1847,7 @@ img {
 }
 @media (min-width: 1025px) {
   .p-service__item__title {
-    font-size: 5em;
+    font-size: 4.5em;
     margin-bottom: 679px;
   }
 }
@@ -1871,7 +1871,6 @@ img {
 @media (min-width: 600px) {
   .p-service__item__description {
     width: calc(100vw * 334 /834);
-    max-width: 390px;
   }
 }
 @media (min-width: 1025px) {
@@ -1887,12 +1886,21 @@ img {
 .p-service dl {
   background-color: rgba(255, 255, 255, 0.8);
   padding-top: 19px;
-  padding-left: calc(100vw * 11 /375);
   padding-bottom: 46px;
+  padding-left: calc(100vw * 10 /375);
+  padding-right: calc(100vw * 14 /375);
 }
 @media (min-width: 600px) {
   .p-service dl {
     padding-left: calc(100vw * 11 /834);
+    padding-right: calc(100vw * 15 /834);
+  }
+}
+@media (min-width: 1025px) {
+  .p-service dl {
+    height: 167px;
+    padding-left: calc(100vw * 19 /1920);
+    padding-right: calc(100vw * 25 /1920);
   }
 }
 .p-service dl dt {

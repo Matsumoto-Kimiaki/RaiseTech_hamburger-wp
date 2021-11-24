@@ -41,7 +41,7 @@
         margin-left: calc(100vw * 10 /#{$width-tab});
       }
       @include mq(pc) {
-        font-size: 5em;
+        font-size: 4.5em;
         margin-bottom: 679px;
       }
 
@@ -63,7 +63,6 @@
       width: calc(100vw * 314 /#{$width-sp});
       @include mq(tab) {
         width: calc(100vw * 334 /#{$width-tab});
-        max-width: 390px;
       }
       @include mq(pc) {
         width: calc(100vw * 585 /#{$width-pc});
@@ -79,10 +78,17 @@
 .p-service dl {
   background-color: rgba(255,255,255,0.8);     //opacityだと文字も透過されるので、rgbaで指定
   padding-top: 19px;
-  padding-left: calc(100vw * 11 /#{$width-sp});
   padding-bottom: 46px;
+  padding-left: calc(100vw * 10 /#{$width-sp});
+  padding-right: calc(100vw * 14 /#{$width-sp});
   @include mq(tab) {
     padding-left: calc(100vw * 11 /#{$width-tab});
+    padding-right: calc(100vw * 15 /#{$width-tab});
+  }
+  @include mq(pc) {
+    height: 167px;
+    padding-left: calc(100vw * 19 /#{$width-pc});
+    padding-right: calc(100vw * 25 /#{$width-pc});
   }
   dt {
     font-size: 1.375rem;
