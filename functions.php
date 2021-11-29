@@ -3,6 +3,7 @@
 add_theme_support('title-tag');
 add_theme_support('post-thumbnails');
 add_theme_support('automatic-feed-links');
+add_theme_support( 'editor-styles' );
 
 //タイトル出力
 function hamburger_title($title)
@@ -38,10 +39,9 @@ function hamburger_script()
 add_action('wp_enqueue_scripts', 'hamburger_script');
 
 
-
-add_action('after_setup_theme', function () {
-    // ブロックエディタ用スタイル機能をテーマに追加 
-    add_theme_support('editor-styles');
-    // ブロックエディタ用CSSの読み込み
-    add_editor_style(get_template_directory_uri() . '/css/editor-style.css');
-});
+//ブロックエディタ用CSSの読み込み
+function org_theme_add_editor_styles() {
+    $editor_style_url = get_theme_file_uri('/css/editor-style.css');
+    wp_enqueue_style( 'block-editor-style', $editor_style_url );
+}
+add_action( 'enqueue_block_editor_assets', 'org_theme_add_editor_styles' );

@@ -1,0 +1,83 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.l-content .post {
+  h2,
+  h4,
+  h3,
+  h5,
+  h6,
+  > p,
+  .wp-block-quote,
+  .wp-block-image,
+  .wp-block-gallery,
+  ol,
+  ul,
+  .wp-block-code,
+  .wp-block-table,
+  .wp-block-button {
+    margin-bottom: 30px;
+    @include mq(tab) {
+      margin-bottom: 60px;
+    }
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    @include mq(tab) {
+      font-size: 2.25rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    @include mq(tab) {
+      font-size: 1.75rem;
+    }
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1.25rem;
+  }
+
+  .wp-block-columns {
+    margin-bottom: 0;
+  }
+
+  > .wp-block-columns {
+    margin-bottom: 30px;
+    @include mq(tab) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .blocks-gallery-grid {
+    margin-bottom: 0;
+  }
+
+  .blocks-gallery-item {
+    margin: 0;
+  }
+
+  li > ol,
+  li > ul {
+    padding-left: calc(100vw * 18 /#{$width-sp});
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include mq(tab) {
+      padding-left: calc(100vw * 18 /#{$width-tab});
+    }
+    @include mq(pc) {
+      padding-left: calc(100vw * 18 /#{$width-pc});
+    }
+  }
+
+  ol + ul,
+  ul + ol,
+  ol + ol,
+  ul + ul {
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,13 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.l-content .post {
+  ol {
+    list-style: decimal;
+  }
+
+  ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+}

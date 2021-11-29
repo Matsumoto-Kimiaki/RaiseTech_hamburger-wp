@@ -1,0 +1,30 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.l-content .post {
+  .blocks-gallery-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    @include mq(tab) {
+      gap: 20px 16px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mq(pc) {
+      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @for $i from 1 through 8 {
+    .columns-#{$i} .blocks-gallery-grid {
+      @include mq(pc) {
+        grid-template-columns: repeat(#{$i}, 1fr);
+      }
+    }
+  }
+
+  .blocks-gallery-grid .blocks-gallery-item {
+    width: 100%;
+  }
+}

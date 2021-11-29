@@ -1,45 +1,41 @@
 @use "../../foundation/mixin" as *;
 @use "../../foundation/variable" as *;
 
-.wp-block-quote {
-  width: calc(100vw * 335 /#{$width-sp});
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: calc(100vw * 20 /#{$width-sp});
-  background-color: #f5f5f5;
-  @include mq(tab) {
-    width: calc(100vw * 714 /#{$width-tab});
-    padding-top: 50px;
-    padding-bottom: 60px;
-    padding-left: calc(100vw * 50 /#{$width-tab});
-  }
-  @include mq(pc) {
-    width: calc(100vw * 1353 /#{$width-pc});
-    padding-bottom: 50px;
-    padding-left: calc(100vw * 50 /#{$width-pc});
-  }
-
-  p {
-    width: calc(100vw * 299 /#{$width-sp});
-    overflow: hidden;
+.l-content .post {
+  .wp-block-quote {
+    width: calc(100vw * 335 /#{$width-sp});
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: calc(100vw * 20 /#{$width-sp});
+    background-color: #f5f5f5;
     @include mq(tab) {
-      width: calc(100vw * 608 /#{$width-tab});
+      width: calc(100vw * 714 /#{$width-tab});
+      padding-top: 50px;
+      padding-bottom: 60px;
+      padding-left: calc(100vw * 50 /#{$width-tab});
     }
     @include mq(pc) {
+      width: calc(100vw * 1353 /#{$width-pc});
+      padding-bottom: 50px;
+      padding-left: calc(100vw * 50 /#{$width-pc});
+    }
+
+    p {
+      width: calc(100vw * 299 /#{$width-sp});
+      margin-bottom: 30px;
+      // overflow: hidden;
+      @include mq(tab) {
+        width: calc(100vw * 608 /#{$width-tab});
+        margin-bottom: 60px;
+      }
+      @include mq(pc) {
         width: calc(100vw * 1243 /#{$width-pc});
+      }
     }
-  }
 
-  cite {
-    display: block;
-    margin-top: 30px;
-    @include mq(tab) {
-      margin-top: 60px;
+    cite a {
+      color: #4a6c9b;
+      text-decoration: underline;
     }
-  }
-
-  a {
-    color: #4A6C9B;
-    text-decoration: underline;
   }
 }
