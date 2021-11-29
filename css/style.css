@@ -1730,8 +1730,8 @@ img {
 }
 
 .l-content .post h2,
-.l-content .post h4,
 .l-content .post h3,
+.l-content .post h4,
 .l-content .post h5,
 .l-content .post h6,
 .l-content .post > p,
@@ -1747,8 +1747,8 @@ img {
 }
 @media (min-width: 600px) {
   .l-content .post h2,
-.l-content .post h4,
 .l-content .post h3,
+.l-content .post h4,
 .l-content .post h5,
 .l-content .post h6,
 .l-content .post > p,

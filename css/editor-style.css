@@ -204,8 +204,8 @@
 }
 
 .editor-styles-wrapper h2,
-.editor-styles-wrapper h4,
 .editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
 .editor-styles-wrapper h5,
 .editor-styles-wrapper h6,
 .editor-styles-wrapper > p,
@@ -221,8 +221,8 @@
 }
 @media (min-width: 600px) {
   .editor-styles-wrapper h2,
-.editor-styles-wrapper h4,
 .editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
 .editor-styles-wrapper h5,
 .editor-styles-wrapper h6,
 .editor-styles-wrapper > p,
