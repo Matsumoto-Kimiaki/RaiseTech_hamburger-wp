@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as *;
 @use "../../foundation/variable" as *;
 
-.l-content .post {
+.post {
   .blocks-gallery-grid {
     display: grid;
     gap: 20px;

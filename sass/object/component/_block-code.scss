@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as *;
 @use "../../foundation/variable" as *;
 
-.l-content .post {
+.post {
   .wp-block-code {
     width: calc(100vw * 335 /#{$width-sp});
     padding-left: calc(100vw * 50 /#{$width-sp});

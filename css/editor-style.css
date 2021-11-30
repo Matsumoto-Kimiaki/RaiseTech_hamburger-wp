@@ -1,3 +1,44 @@
+@media (min-width: 600px) {
+  .editor-styles-wrapper .wp-block-button {
+    width: calc(100vw * 714 /834);
+  }
+}
+@media (min-width: 1025px) {
+  .editor-styles-wrapper .wp-block-button {
+    width: calc(100vw * 1353 /1920);
+  }
+}
+.editor-styles-wrapper .wp-block-button > .wp-block-button__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(100vw * 335 /375);
+  height: 81px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 1px solid;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#DED8D3));
+  background: -webkit-linear-gradient(#F2EDE9, #DED8D3);
+  background: linear-gradient(#F2EDE9, #DED8D3);
+}
+@media (min-width: 600px) {
+  .editor-styles-wrapper .wp-block-button > .wp-block-button__link {
+    width: calc(100vw * 429 /834);
+    height: 104px;
+  }
+}
+@media (min-width: 1025px) {
+  .editor-styles-wrapper .wp-block-button > .wp-block-button__link {
+    width: calc(100vw * 429 /1920);
+  }
+}
+
 .editor-styles-wrapper .wp-block-code {
   width: calc(100vw * 335 /375);
   padding-left: calc(100vw * 50 /375);
@@ -98,47 +139,6 @@
 @media (min-width: 1025px) {
   .editor-styles-wrapper .wp-block-table td:first-child {
     width: 31.7%;
-  }
-}
-
-@media (min-width: 600px) {
-  .editor-styles-wrapper .wp-block-button {
-    width: calc(100vw * 714 /834);
-  }
-}
-@media (min-width: 1025px) {
-  .editor-styles-wrapper .wp-block-button {
-    width: calc(100vw * 1353 /1920);
-  }
-}
-.editor-styles-wrapper .wp-block-button > .wp-block-button__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: calc(100vw * 335 /375);
-  height: 81px;
-  font-weight: bold;
-  border-radius: 20px;
-  border: 1px solid;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#DED8D3));
-  background: -webkit-linear-gradient(#F2EDE9, #DED8D3);
-  background: linear-gradient(#F2EDE9, #DED8D3);
-}
-@media (min-width: 600px) {
-  .editor-styles-wrapper .wp-block-button > .wp-block-button__link {
-    width: calc(100vw * 429 /834);
-    height: 104px;
-  }
-}
-@media (min-width: 1025px) {
-  .editor-styles-wrapper .wp-block-button > .wp-block-button__link {
-    width: calc(100vw * 429 /1920);
   }
 }
 

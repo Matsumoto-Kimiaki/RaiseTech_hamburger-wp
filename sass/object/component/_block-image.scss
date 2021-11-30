@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as *;
 @use "../../foundation/variable" as *;
 
-.l-content .post {
+.post {
   .wp-block-image img {
     height: auto;
     object-fit: cover;
