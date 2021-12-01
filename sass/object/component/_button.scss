@@ -2,7 +2,14 @@
 @use "../../foundation/variable" as *;
 
 .c-button {
-    border-radius: 10px;
-    border: 1px solid $grey;
-    cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid $grey;
+  cursor: pointer;
+}
+
+.c-button a {
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
 }

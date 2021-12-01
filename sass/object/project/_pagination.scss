@@ -69,27 +69,15 @@
     }
   }
 
-  span {
+  span, a {
     margin: 0;
     padding: 0;
   }
 
-  a {
-    margin: 0;
-    padding: 0;
+  .page + .page, .current + .page, .page + .current {
+    margin-left: 15px;
   }
-}
 
-.page + .page {
-  margin-left: 15px;
-}
-
-.current + .page {
-  margin-left: 15px;
-}
-
-.page + .current {
-  margin-left: 15px;
 }
 
 .l-pagination .nav-links {

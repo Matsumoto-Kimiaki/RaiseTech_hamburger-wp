@@ -107,6 +107,10 @@
       a {
         color: #707070;
         font-weight: bold;
+        line-height: 42px;
+        @include mq(pc) {
+          line-height: 60px;
+        }
       }
     }
   }

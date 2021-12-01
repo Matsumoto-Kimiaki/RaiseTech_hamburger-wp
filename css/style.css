@@ -618,6 +618,13 @@ img {
   cursor: pointer;
 }
 
+.c-button a {
+  display: block;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
 .c-card {
   background-color: #3C2B1C;
 }
@@ -859,6 +866,12 @@ img {
 .p-card__figcaption__button a {
   color: #707070;
   font-weight: bold;
+  line-height: 42px;
+}
+@media (min-width: 1025px) {
+  .p-card__figcaption__button a {
+    line-height: 60px;
+  }
 }
 
 .p-card + .p-card {
@@ -1463,24 +1476,11 @@ img {
     margin-left: 19.3px;
   }
 }
-.wp-pagenavi span {
+.wp-pagenavi span, .wp-pagenavi a {
   margin: 0;
   padding: 0;
 }
-.wp-pagenavi a {
-  margin: 0;
-  padding: 0;
-}
-
-.page + .page {
-  margin-left: 15px;
-}
-
-.current + .page {
-  margin-left: 15px;
-}
-
-.page + .current {
+.wp-pagenavi .page + .page, .wp-pagenavi .current + .page, .wp-pagenavi .page + .current {
   margin-left: 15px;
 }
 

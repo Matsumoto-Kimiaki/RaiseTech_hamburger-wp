@@ -1,0 +1,17 @@
+/* Component ------------ */
+@forward "object/component/block-button";
+@forward "object/component/block-code";
+@forward "object/component/block-image";
+@forward "object/component/block-list";
+@forward "object/component/block-quote";
+@forward "object/component/block-table";
+
+/* Project ------------ */
+@forward "object/project/block-gallery";
+
+/* Utility ------------ */
+@forward "object/utility/block-margin";
+
+// 修正するときは、_editor-style.scssのファイル名からアンダースコアを外し、
+// 吐き出されたeditor-style.cssの.postを.editor-styles-wrapperに置換する。
+
