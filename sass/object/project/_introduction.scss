@@ -1,0 +1,37 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
+.p-introduction {
+  padding-left: calc(100vw * 22 /#{$width-sp});
+  @include mq(tab) {
+    padding-left: calc(100vw * 42 /#{$width-tab});
+  }
+  @include mq(pc) {
+    padding-left: calc(100vw * 100 /#{$width-pc});
+  }
+
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.75rem;
+    font-weight: bold;
+    @include mq(tab) {
+      margin-top: 36px;
+      margin-bottom: 25px;
+      font-size: 2.25rem;
+    }
+    @include mq(pc) {
+      margin-top: 60px;
+    }
+  }
+  p {
+    width: calc(100vw * 335 /#{$width-sp});
+    line-height: 23px;
+    @include mq(tab) {
+      width: calc(100vw * 757 /#{$width-tab});
+    }
+    @include mq(pc) {
+      width: calc(100vw * 1353 /#{$width-pc});
+    }
+  }
+}
