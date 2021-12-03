@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as *;
 @use "../../foundation/variable" as *;
 
-.post {
+.post, .type-page {
   .wp-block-quote {
     width: calc(100vw * 335 /#{$width-sp});
     padding-top: 30px;
@@ -23,7 +23,6 @@
     p {
       width: calc(100vw * 299 /#{$width-sp});
       margin-bottom: 30px;
-      // overflow: hidden;
       @include mq(tab) {
         width: calc(100vw * 608 /#{$width-tab});
         margin-bottom: 60px;

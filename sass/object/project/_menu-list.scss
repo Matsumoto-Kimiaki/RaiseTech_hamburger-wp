@@ -20,8 +20,8 @@
     width: calc(100vw * 367 /#{$width-pc});
     padding-left: calc(100vw * 46 /#{$width-pc});
     overflow-y: visible;
-    padding-bottom: 10000px;  //sidebarの高さを左側に合わせるため。l-gridにoverflow: hiddenを追加
-    margin-bottom: -10000px;
+    padding-bottom: 100000px;  //sidebarの高さを左側に合わせるため。l-gridにoverflow: hiddenを追加
+    margin-bottom: -100000px;
   }
   .sub-menu {
     margin-left: calc(100vw * 20 /#{$width-sp});

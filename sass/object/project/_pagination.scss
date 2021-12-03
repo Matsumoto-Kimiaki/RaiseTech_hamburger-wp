@@ -58,7 +58,7 @@
       text-align: center;
     }
   }
-
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
   .nextpostslink {
     display: none;
     margin-left: 8.2px;
@@ -83,6 +83,7 @@
 .l-pagination .nav-links {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   justify-content: space-between;
   padding-left: calc(100vw * 20 /#{$width-sp});
   padding-right: calc(100vw * 20 /#{$width-sp});

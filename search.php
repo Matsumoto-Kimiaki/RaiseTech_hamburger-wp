@@ -41,8 +41,8 @@
       <?php wp_pagenavi(); ?>
 
       <?php the_posts_navigation(array(     //スマホ表示用
-        'prev_text' => '&lt;&lt;  前へ',
-        'next_text' => '次へ  &gt;&gt;',
+        'next_text' => '&lt;&lt;  前へ',
+        'prev_text' => '次へ  &gt;&gt;',
       )); ?>
 
     </div>

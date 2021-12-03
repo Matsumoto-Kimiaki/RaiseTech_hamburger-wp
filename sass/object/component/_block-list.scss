@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as *;
 @use "../../foundation/variable" as *;
 
-.post {
+.post, .type-page {
   ol {
     list-style: decimal;
   }
