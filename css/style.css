@@ -416,7 +416,7 @@ img {
 
 .l-pagination {
   margin-top: 60.4px;
-  margin-bottom: 31px;
+  margin-bottom: 113px;
 }
 @media (min-width: 600px) {
   .l-pagination {
@@ -1474,12 +1474,11 @@ img {
 }
 .wp-pagenavi .previouspostslink {
   display: none;
-  margin-right: 8.2px;
-  border-style: none;
 }
 @media (min-width: 600px) {
   .wp-pagenavi .previouspostslink {
     display: block;
+    border-style: none;
     margin-right: 17.2px;
   }
 }
@@ -1511,48 +1510,46 @@ img {
     text-align: center;
   }
 }
-.wp-pagenavi 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 .nextpostslink {
+.wp-pagenavi .nextpostslink {
   display: none;
-  margin-left: 8.2px;
-  border-style: none;
 }
 @media (min-width: 600px) {
-  .wp-pagenavi 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 .nextpostslink {
+  .wp-pagenavi .nextpostslink {
     display: block;
-    margin-left: 19.3px;
+    border-style: none;
+    margin-left: 17.2px;
   }
 }
-.wp-pagenavi span, .wp-pagenavi a {
+.wp-pagenavi span,
+.wp-pagenavi a {
   margin: 0;
   padding: 0;
 }
-.wp-pagenavi .page + .page, .wp-pagenavi .current + .page, .wp-pagenavi .page + .current {
+.wp-pagenavi .page + .page,
+.wp-pagenavi .current + .page,
+.wp-pagenavi .page + .current {
   margin-left: 15px;
 }
 
 .l-pagination .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: calc(100vw * 20 /375);
-  padding-right: calc(100vw * 20 /375);
   color: #707070;
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 @media (min-width: 600px) {
   .l-pagination .nav-links {
     display: none;
   }
+}
+.l-pagination .nav-links .nav-previous {
+  position: absolute;
+  top: -10px;
+  right: calc(100vw * 20 /375);
+}
+.l-pagination .nav-links .nav-next {
+  position: absolute;
+  top: -10px;
+  left: calc(100vw * 20 /375);
 }
 
 .p-search-form {
